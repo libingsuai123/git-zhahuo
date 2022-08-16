@@ -1,0 +1,4 @@
+/* pages/theme/theme.wxss */
+.headImg {
+  width: 100%;
+}

@@ -1,0 +1,81 @@
+/* pages/my/my.wxss */
+page {
+    color: #999;
+    background: #f1f1f1;
+  }
+  .header {
+    width: 100vw;
+    height: 200rpx;
+    background: #ab9564;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 36rpx;
+  }
+  .avatar {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin: 0 20rpx 0 30rpx;
+  }
+  .address_box {
+    background: #fff;
+  }
+  .address_box > view {
+    height: 80rpx;
+    line-height: 80rpx;
+    padding-left: 30rpx;
+    border-bottom: 1rpx solid #ccc;
+    color: #666;
+  }
+  .order_list .title {
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #ccc;
+    text-align: center;
+    background: #fff;
+  }
+  .my_order {
+    background: #fff;
+    margin-bottom: 20rpx;
+  }
+  .order_no {
+    margin: 0 30rpx;
+    border-bottom: 1rpx solid #ccc;
+    line-height: 80rpx;
+  }
+  .order_products {
+    display: flex;
+    margin: 0 30rpx;
+    align-items: center;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #ccc;
+  }
+  .order_img {
+    width: 120rpx;
+    height: 120rpx;
+    background: #f4f5f4;
+  }
+  .order_info {
+    flex: 1;
+    margin: 0 20rpx;
+  }
+  .order_status {
+    color: #ac0707;
+  }
+  .order_footer {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80rpx;
+    align-items: center;
+    color: #333;
+    margin: 0 30rpx;
+  }
+  .pay {
+    width: 150rpx;
+    height: 60rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 60rpx;
+    background: #ac0707;
+  }
+  

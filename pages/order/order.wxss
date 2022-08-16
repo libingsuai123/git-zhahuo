@@ -1,0 +1,110 @@
+/* pages/order/order.wxss */
+.address_box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30rpx;
+    height: 150rpx;
+    font-size: 40rpx;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .address_box image {
+    width: 48rpx;
+    height: 48rpx;
+  }
+  .info_box {
+    flex: 1;
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30rpx;
+  }
+  .info_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .order {
+    display: flex;
+    padding: 20rpx 30rpx;
+    border-bottom: 1rpx solid #000;
+  }
+  .img {
+    width: 180rpx;
+    height: 180rpx;
+    background: #f4f5f4;
+    margin-right: 20rpx;
+  }
+  .order_middle {
+    flex: 1;
+  }
+  
+  .footer {
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    background: #fff;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1rpx solid #666;
+  }
+  .accounts_box {
+    flex: 1;
+    color: red;
+    padding-left: 30rpx;
+  }
+  .pay {
+    flex-basis: 240rpx;
+    background: #ab9564;
+    color: #fff;
+    text-align: center;
+  }
+  .pay.disable {
+    opacity: 0.5;
+  }
+
+.order_info{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20rpx 30rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #333;
+}
+.order_box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.key{
+    color: #999;
+}
+.val{
+    color: #333;
+    margin-left: 10rpx;
+}
+.status{
+    line-height: 32rpx;
+
+}
+.status.unpay{
+    color: red;
+}
+.status.payed{
+    color: #ab9564;
+}
+.status.shipments{
+    color: #0f0;
+}

@@ -1,0 +1,17 @@
+<!--pages/cate/cate.wxml-->
+<view class="cate_container">
+    <view class="cate_left">
+        <block wx:for="{{cateData}}" wx:key="id">
+            <view bind:tap="onTab" mark:index="{{index}}" class="cate {{index==curIndex?'active':''}}">{{item.name}}</view>
+        </block>
+    </view>
+    <view class="cate_right">
+        <image class="headImg" src="{{headImg}}"></image>
+        <view class="name1">{{name}}</view>
+        <view class="product_list">
+            <block wx:for="{{products}}" wx:key="id">
+                <c-product product="{{item}}"></c-product>
+            </block>
+        </view>
+    </view>
+</view>

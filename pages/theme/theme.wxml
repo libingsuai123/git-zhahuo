@@ -1,0 +1,3 @@
+<!--pages/theme/theme.wxml-->
+<image class="headImg" src="{{head_img.url}}"></image>
+<c-list list="{{products}}"></c-list>

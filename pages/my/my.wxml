@@ -1,0 +1,31 @@
+<!--pages/my/my.wxml-->
+<view class="header" bindtap="getUserInfo">
+    <image src="{{avatarUrl}}" class="avatar"></image>
+    <text class="nickName">{{nickName}}</text>
+</view>
+<view class="address_box">
+    <view class="address_ctrl" bindtap="onChoose">地址管理</view>
+    <view class="name">{{addressInfo.userName}}</view>
+    <view class="mobile">{{addressInfo.mobile}}</view>
+    <view class="detail_address">{{addressInfo.detailAddress}}</view>
+</view>
+
+<view class="order_list">
+    <block wx:for="{{orderData}}" wx:key="id">
+        <view class="my_order" bindtap="toOrder" mark:id="{{item.id}}">
+            <view class="order_no">订单编号:{{item.order_no}}</view>
+            <view class="order_products">
+                <image src="{{item.snap_img}}" class="order_img"></image>
+                <view class="order_info">
+                    <view class="name">{{item.snap_name}}</view>
+                    <view class="num">{{item.total_count}}件商品</view>
+                </view>
+                <view class="order_status">{{item.status==1?'待付款':item.status==2?'已付款':'已发货'}}</view>
+            </view>
+            <view class="order_footer">
+                <view>实付：</view>
+                <view class="pay">付款</view>
+            </view>
+        </view>
+    </block>
+</view>
